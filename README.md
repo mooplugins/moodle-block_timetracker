@@ -1,6 +1,6 @@
 # Time Tracker block for Moodle
 
-Shows tracked time from the companion [Time Tracker](https://moodle.org/plugins/) plugin (`local_timetracker`) on course and activity pages.
+Shows tracked time from the companion [Time Tracker](https://github.com/mooplugins/moodle-local_timetracker) plugin (`local_timetracker`) on course and activity pages.
 
 ## Features
 
@@ -36,4 +36,4 @@ GNU GPL v3 or later. See [LICENSE](LICENSE).
 
 ## Credits
 
-Originally developed for ScholarLMS. Maintained by [MooPlugins](https://www.mooplugins.com/).
+Originally developed for [ScholarLMS](https://www.scholarlms.com/). Maintained by [MooPlugins](https://www.mooplugins.com/).
