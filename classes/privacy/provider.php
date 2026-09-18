@@ -18,7 +18,8 @@
  * Privacy Subsystem implementation for block_timetracker.
  *
  * @package    block_timetracker
- * @copyright  2026 Mooplugins
+ * @author     BitKea Technologies LLP
+ * @copyright  2026 BitKea Technologies LLP
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -28,11 +29,11 @@ namespace block_timetracker\privacy;
  * Privacy Subsystem for block_timetracker implementing null_provider.
  *
  * @package    block_timetracker
- * @copyright  2026 Mooplugins
+ * @author     BitKea Technologies LLP
+ * @copyright  2026 BitKea Technologies LLP
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class provider implements \core_privacy\local\metadata\null_provider {
-
     /**
      * Get the language string identifier explaining why this plugin stores no data.
      *

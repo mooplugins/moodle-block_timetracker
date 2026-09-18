@@ -12,7 +12,7 @@ Shows tracked time from the companion [Time Tracker](https://github.com/mooplugi
 ## Requirements
 
 - Moodle 4.5 or later (CI tested on 4.5, 5.0, and 5.2)
-- `local_timetracker` **1.4.2** or later (`2026090805+`)
+- `local_timetracker` **1.4.4** or later (`2026091800+`)
 
 ## Installation
 

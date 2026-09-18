@@ -18,18 +18,19 @@
  * Version metadata for block_timetracker.
  *
  * @package    block_timetracker
- * @copyright  2026 Mooplugins
+ * @author     BitKea Technologies LLP
+ * @copyright  2026 BitKea Technologies LLP
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'block_timetracker';
-$plugin->version   = 2026090801;
+$plugin->version   = 2026091800;
 $plugin->requires  = 2024100700; // Moodle 4.5 or later.
 $plugin->supported = [405, 502]; // Moodle 4.5 through 5.2.
 $plugin->maturity  = MATURITY_STABLE;
-$plugin->release   = '1.1.1';
+$plugin->release   = '1.1.2';
 $plugin->dependencies = [
-    'local_timetracker' => 2026090805,
+    'local_timetracker' => 2026091800,
 ];

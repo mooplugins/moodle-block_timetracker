@@ -2,6 +2,15 @@
 
 All notable changes to the Time Tracker block are documented here.
 
+## 1.1.2 - 2026-09-18
+
+### Changed
+
+- Copyright / author metadata set to BitKea Technologies LLP.
+- Moodle Plugin CI queues `local_timetracker` with `add-plugin` before install (same pattern as completionpage).
+- Depends on `local_timetracker` ≥ `2026091800` (1.4.4).
+- Coding style: no blank line after class opening brace.
+
 ## 1.1.1 - 2026-09-08
 
 ### Added

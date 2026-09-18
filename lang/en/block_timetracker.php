@@ -18,7 +18,8 @@
  * Language strings for block_timetracker.
  *
  * @package    block_timetracker
- * @copyright  2026 Mooplugins
+ * @author     BitKea Technologies LLP
+ * @copyright  2026 BitKea Technologies LLP
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
