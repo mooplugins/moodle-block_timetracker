@@ -10,6 +10,7 @@ All notable changes to the Time Tracker block are documented here.
 - Moodle Plugin CI queues `local_timetracker` with `add-plugin` before install (same pattern as completionpage).
 - Depends on `local_timetracker` ≥ `2026091800` (1.4.4).
 - Coding style: no blank line after class opening brace.
+- Block content uses Boost utility classes (`list-unstyled`, `btn-link`, `text-muted`) instead of raw `<i>` / `<br>` markup.
 
 ## 1.1.1 - 2026-09-08
 

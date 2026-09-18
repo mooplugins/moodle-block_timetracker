@@ -146,18 +146,28 @@ class block_timetracker extends block_base {
             );
             $this->content->text .= html_writer::div(
                 html_writer::tag('strong', get_string('total_admin', 'block_timetracker'))
-                . ': ' . html_writer::tag('i', $this->format_duration($totaltime))
+                . ': ' . html_writer::span($this->format_duration($totaltime), 'local-timetracker-duration'),
+                'mb-1'
             );
             $this->content->text .= html_writer::div(
                 html_writer::tag('strong', get_string('avg_admin', 'block_timetracker'))
-                . ': ' . html_writer::tag('i', $this->format_duration((int) $average))
+                . ': ' . html_writer::span($this->format_duration((int) $average), 'local-timetracker-duration'),
+                'mb-1'
             );
-            $this->content->footer = html_writer::div(get_string('time_format', 'block_timetracker'));
+            $this->content->footer = html_writer::div(
+                get_string('time_format', 'block_timetracker'),
+                'text-muted small'
+            );
 
             if (has_capability('local/timetracker:viewreport', context_system::instance())) {
                 $reporturl = new moodle_url('/local/timetracker/report/index.php');
                 $this->content->footer .= html_writer::div(
-                    html_writer::link($reporturl, get_string('moredetails', 'block_timetracker'))
+                    html_writer::link(
+                        $reporturl,
+                        get_string('moredetails', 'block_timetracker'),
+                        ['class' => 'btn btn-link btn-sm px-0']
+                    ),
+                    'mt-2'
                 );
             }
 
@@ -191,21 +201,25 @@ class block_timetracker extends block_base {
 
             if ($timetracked > 0) {
                 $lines[] = format_string($cms[$cmid]->name) . ': '
-                    . html_writer::tag('i', $this->format_duration($timetracked));
+                    . html_writer::span($this->format_duration($timetracked), 'local-timetracker-duration');
             }
         }
 
         if ($lines) {
-            $this->content->text = implode(html_writer::empty_tag('br'), $lines);
+            $this->content->text = html_writer::alist($lines, ['class' => 'list-unstyled mb-0']);
         } else {
             $this->content->text = get_string('notimesyet', 'block_timetracker');
         }
 
         $this->content->footer = html_writer::div(
             html_writer::tag('strong', get_string('total', 'block_timetracker'))
-            . ': ' . html_writer::tag('i', $this->format_duration($totaltime))
+            . ': ' . html_writer::span($this->format_duration($totaltime), 'local-timetracker-duration'),
+            'mb-1'
         );
-        $this->content->footer .= html_writer::div(get_string('time_format', 'block_timetracker'));
+        $this->content->footer .= html_writer::div(
+            get_string('time_format', 'block_timetracker'),
+            'text-muted small'
+        );
 
         return $this->content;
     }
